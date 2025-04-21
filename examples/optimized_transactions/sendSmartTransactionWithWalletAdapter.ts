@@ -31,7 +31,7 @@ async function main() {
   const recipient = new PublicKey("TARGET_WALLET_ADDRESS"); // Replace this
   const instructions: TransactionInstruction[] = [
     SystemProgram.transfer({
-      fromPubkey: payer,
+      fromPubkey: payer, //HeLiusYvfHDebvXRDoEwagFpCvuzPDCbRSjUvebncgx1
       toPubkey: recipient,
       lamports: 0.01 * LAMPORTS_PER_SOL,
     }),
